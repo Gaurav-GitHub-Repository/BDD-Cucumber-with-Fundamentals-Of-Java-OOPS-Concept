@@ -10,12 +10,12 @@ public abstract class CheckoutBase {
 	
 	public abstract boolean verifyProductDetails(String Product1, String Product4, String Product6) throws IOException, InterruptedException;
 	
-	public abstract boolean verifyContinueButton();
+	public abstract boolean verifyContinueButton() throws IOException;
 	
-	public abstract boolean verifyCancelButton();
+	public abstract boolean verifyCancelButton() throws IOException;
 	
-	public abstract boolean verifyFinishButton();
+	public abstract boolean verifyFinishButton() throws IOException;
 
-	public abstract boolean verifyCheckoutPage();
+	public abstract boolean verifyCheckoutPage() throws IOException;
 	
 }
