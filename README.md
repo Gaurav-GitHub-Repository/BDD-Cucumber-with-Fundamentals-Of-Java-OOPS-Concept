@@ -4,7 +4,7 @@ Browser : Google Chrome V 141.0.7390.123
 Libraries/API : Selenium-Java V 4.35.0, TestNG V 7.11.0
 
 This framework is based on BDD Cucumber with Java. It validates functional test case, regression test case, end to end test case and find bugs. 
-The framework is designed in such a way that, Once the test runner is executed feature file reads the step defination file (Internal mapping of feature file and step defination file) and 
+The framework is designed in such a way that once the test runner is executed, feature file reads the step defination file (Internal mapping of feature file and step defination file) and 
 implemented method are called with the help of the object created for the each class. It also validates the implementation by initialy setting the boolean flag to "false" and the moment implemented
 method are executed the flag will be set to "true" and finally it is going to be validated based on the testNG assertion in the step defination file.
 
