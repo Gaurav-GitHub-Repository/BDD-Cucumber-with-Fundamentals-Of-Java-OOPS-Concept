@@ -92,39 +92,6 @@ public class Login extends LoginBase{
 		return flag;
 	}
 	@Override
-	public boolean verifyCredentials(String user, String password){
-
-		try{
-			List<WebElement> credentialsField = driver.findElements(By.xpath("//form/input"));
-			for(int i=1;i<=credentialsField.size();i++)
-			{
-				if(driver.findElement(By.xpath("//form/input["+i+"]")).isEnabled())
-				{
-					Username.sendKeys(user);
-					Assert.assertTrue(true,"Username is entered");
-					log.info("Username is entered");
-					Password.sendKeys(password);
-					Assert.assertTrue(true,"Password is entered");
-					log.info("Password is entered");
-					if(i==credentialsField.size())
-					{
-						flag=true;
-						component.wait(driver, By.xpath("//form/input[2]"));
-						component.captureScreenshot(driver);
-						break;
-					}
-				}
-			}
-		}catch(FileNotFoundException e){
-			System.out.println("FileNotFoundException Occured");
-		}catch(Exception e){
-			System.out.println("Exception Occured");
-		}finally{
-			System.gc();
-		}
-		return flag;
-	}
-	@Override
 	public boolean verifyLoginButton(){
 
 		try {
