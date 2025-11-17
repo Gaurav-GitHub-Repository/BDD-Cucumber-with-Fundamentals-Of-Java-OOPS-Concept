@@ -8,9 +8,9 @@ public abstract class CartBase {
 	
 	public abstract boolean verifyRemoveButton() throws IOException;
 	
-	public abstract boolean verifyCheckoutButton();
+	public abstract boolean verifyCheckoutButton() throws IOException;
 	
-	public abstract boolean verifyContinueButton();
+	public abstract boolean verifyContinueButton() throws IOException;
 	
-	public abstract boolean verifyCartPage();
+	public abstract boolean verifyCartPage() throws IOException;
 }
