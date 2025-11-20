@@ -39,7 +39,7 @@ public class Login extends LoginBase{
 	@FindBy(xpath="//*[text()='Products']")
 	private WebElement Products;
 
-	@FindBy(xpath="//*[text()='Username and password do not match any user in this service']")
+	@FindBy(xpath="//*[contains(text(),'Username and password do not match any user in this service')]")
 	private WebElement ErrorMessage;
 
 	@FindBy(xpath="//*[text()='Username is required']")
@@ -129,7 +129,7 @@ public class Login extends LoginBase{
 				if(ErrorMessage.getText().equalsIgnoreCase("Epic sadface: Username and password do not match any user in this service"))
 				{
 					flag=true;
-					component.wait(driver, By.xpath("//*[text()='Username and password do not match any user in this service']"));
+					component.wait(driver, By.xpath("//*[contains(text(),'Username and password do not match any user in this service')]"));
 					component.captureScreenshot(driver);
 					Assert.assertTrue(true,"Error message is displayed");
 					log.info("Error message is displayed");
