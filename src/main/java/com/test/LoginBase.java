@@ -10,8 +10,6 @@ public abstract class LoginBase {
 	public abstract boolean verifyUsername(String value) throws IOException;
 	
 	public abstract boolean verifyPassword(String value) throws IOException;
-	
-	public abstract boolean verifyCredentials(String user, String password) throws IOException;
 
 	public abstract boolean verifyLoginButton() throws IOException;
 	
