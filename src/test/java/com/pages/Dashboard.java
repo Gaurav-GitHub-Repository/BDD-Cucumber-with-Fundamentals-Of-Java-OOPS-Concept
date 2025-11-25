@@ -180,7 +180,7 @@ public class Dashboard extends DashboardBase{
 						flag=true;
 						System.out.println(product.getKey());
 						System.out.println(product.getValue());
-						if(product.getKey().contains(AvailableProduct[1]) || product.getKey().contains(AvailableProduct[2]) || product.getKey().contains(AvailableProduct[3]) || product.getKey().contains(AvailableProduct[4]) || product.getKey().contains(AvailableProduct[5]) || product.getKey().contains(AvailableProduct[6]))
+						if(product.getKey().contains(AvailableProduct[0]) || product.getKey().contains(AvailableProduct[1]) || product.getKey().contains(AvailableProduct[2]) || product.getKey().contains(AvailableProduct[3]) || product.getKey().contains(AvailableProduct[4]) || product.getKey().contains(AvailableProduct[5]))
 						{
 							Assert.assertTrue(true, "Available product with respective to the price are retrieved");
 							log.info("Available product with respective to the price are retrieved");
