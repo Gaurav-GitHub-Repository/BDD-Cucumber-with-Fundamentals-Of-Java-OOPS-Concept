@@ -15,7 +15,7 @@ public class BrowserConfiguration {
 
 	public static WebDriver driver;
 	static Logger log = Logger.getLogger(BrowserConfiguration.class);
-	static PropertiesFile properties = new PropertiesFile();
+	static PropertiesFile properties;
 
 	@Description("Browser Configuration")
 	public synchronized static void setup()
